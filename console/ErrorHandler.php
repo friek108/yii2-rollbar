@@ -1,8 +1,8 @@
 <?php
 
-namespace baibaratsky\yii\rollbar\console;
+namespace friek108\yii\rollbar\console;
 
-use baibaratsky\yii\rollbar\ErrorHandlerTrait;
+use friek108\yii\rollbar\ErrorHandlerTrait;
 
 class ErrorHandler extends \yii\console\ErrorHandler
 {

@@ -32,7 +32,7 @@ Usage
  'bootstrap' => ['rollbar'],
  'components' => [
      'rollbar' => [
-         'class' => 'baibaratsky\yii\rollbar\Rollbar',
+         'class' => 'friek108\yii\rollbar\Rollbar',
          'accessToken' => 'POST_SERVER_ITEM_ACCESS_TOKEN',
          
          // You can specify exceptions to be ignored by yii2-rollbar:
@@ -48,10 +48,10 @@ Usage
  ```php
  'components' => [
      'errorHandler' => [
-         'class' => 'baibaratsky\yii\rollbar\web\ErrorHandler',
+         'class' => 'friek108\yii\rollbar\web\ErrorHandler',
          
          // You can include additional data in a payload:
-         // 'payloadDataCallback' => function (\baibaratsky\yii\rollbar\web\ErrorHandler $errorHandler) {
+         // 'payloadDataCallback' => function (\friek108\yii\rollbar\web\ErrorHandler $errorHandler) {
          //     return [
          //         'exceptionCode' => $errorHandler->exception->getCode(),
          //         'rawRequestBody' => Yii::$app->request->getRawBody(),
@@ -65,7 +65,7 @@ Usage
  ```php
  'components' => [
      'errorHandler' => [
-         'class' => 'baibaratsky\yii\rollbar\console\ErrorHandler',
+         'class' => 'friek108\yii\rollbar\console\ErrorHandler',
      ],
  ],
  ```
@@ -76,7 +76,7 @@ Payload from your exceptions
 If you want your exceptions to send some additional data to Rollbar,
 it is possible by implementing the `WithPayload` interface.
  ```php
- use baibaratsky\yii\rollbar\WithPayload;
+ use friek108\yii\rollbar\WithPayload;
  
  class SomeException extends \Exception implements WithPayload
  {
@@ -96,7 +96,7 @@ Put the following code in your config:
  'log' => [
      'targets' => [
          [
-             'class' => 'baibaratsky\yii\rollbar\log\Target',
+             'class' => 'friek108\yii\rollbar\log\Target',
              'levels' => ['error', 'warning', 'info'], // Log levels you want to appear in Rollbar
              
              // It is highly recommended that you specify certain categories.

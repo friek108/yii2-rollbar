@@ -1,6 +1,6 @@
 <?php
 
-namespace baibaratsky\yii\rollbar;
+namespace friek108\yii\rollbar;
 
 use Rollbar\Rollbar as BaseRollbar;
 use Yii;
