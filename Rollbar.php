@@ -58,7 +58,7 @@ class Rollbar extends BaseObject
             'local_vars_dump' => $this->localVarsDump,
             'capture_error_stacktraces' => $this->captureErrorStacktraces,
             'proxy' => $this->proxy,
-            'custom' => $this->custom;
+            'custom' => $this->custom
 
         ], false, false, false);
     }
