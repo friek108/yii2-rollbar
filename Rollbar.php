@@ -55,7 +55,7 @@ class Rollbar extends BaseObject
             'root' => !empty($this->root) ? Yii::getAlias($this->root) : null,
             'scrub_fields' => $this->scrubFields,
             'timeout' => $this->timeout,
-            'local_vars_dump' = $this->localVarsDump,
+            'local_vars_dump' => $this->localVarsDump,
             'capture_error_stacktraces' => $this->captureErrorStacktraces,
             'proxy' => $this->proxy,
             'custom' => $this->custom;
