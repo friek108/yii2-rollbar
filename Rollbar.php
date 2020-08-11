@@ -23,8 +23,11 @@ class Rollbar extends BaseObject
     public $root = '@app';
     public $scrubFields = ['passwd', 'password', 'secret', 'auth_token', '_csrf'];
     public $timeout = 3;
+    public $localVarsDump;
+    public $captureErrorStacktraces;
     public $proxy;
-    public $enableUtf8Sanitization = true;
+    public $custom;
+
 
     /**
      * @var array Exceptions to be ignored by yii2-rollbar
@@ -52,8 +55,11 @@ class Rollbar extends BaseObject
             'root' => !empty($this->root) ? Yii::getAlias($this->root) : null,
             'scrub_fields' => $this->scrubFields,
             'timeout' => $this->timeout,
+            'local_vars_dump' = $this->localVarsDump,
+            'capture_error_stacktraces' => $this->captureErrorStacktraces,
             'proxy' => $this->proxy,
-            'enable_utf8_sanitization' => $this->enableUtf8Sanitization,
+            'custom' => $this->custom;
+
         ], false, false, false);
     }
 }

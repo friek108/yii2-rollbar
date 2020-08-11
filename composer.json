@@ -1,10 +1,10 @@
 {
-    "name": "baibaratsky/yii2-rollbar",
+    "name": "friek108/yii2-rollbar",
     "description": "Rollbar for Yii2",
     "type": "yii2-extension",
     "keywords": ["rollbar", "ratchetio", "ratchet.io", "yii", "yii2", "log", "error", "exception", "debug", "monitoring"],
     "license": "BSD-3-Clause",
-    "homepage": "http://github.com/baibaratsky/yii2-rollbar",
+    "homepage": "http://github.com/friek108/yii2-rollbar",
     "authors": [
         {
             "name": "Andrei Baibaratsky",
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "baibaratsky\\yii\\rollbar\\": ""
+            "friek108\\yii\\rollbar\\": ""
         }
     }
 }
